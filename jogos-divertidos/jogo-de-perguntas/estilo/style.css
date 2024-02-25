@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Titulo;
+    src: url(../fontes/Protest_Strike/ProtestStrike-Regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: Texto;
+    src: url(../fontes/Fredoka/Fredoka-VariableFont_wdth\,wght.ttf) format(truetype);
+}
+
+:root {
+    --corFundoHeader: #472816;
+    --corFundoBody: #D2C1B7;
+    --corCaixa2: #AD8974;
+    --corCaixa1: #896148;
+    --fonteConteudo: Texto, sans-serif;
+    --fonteTitulo: Titulo, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--corFundoBody);
+    font-family: var(--fonteConteudo);
+}
+
+header {
+    background-color: var(--corFundoHeader);
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font: normal 3.5em var(--fonteTitulo);
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    padding: 20px 0px 30px 0px;
+}
+
+main {
+    background-color: #ffffff;
+    max-width: 800px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.40);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    margin: auto;
+}
+
+article h1 {
+    font-size: 2em;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+    background-color: var(--corCaixa1);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.373);
+    max-width: 230px;
+    padding: 0px 0px 10px 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: auto;
+}
+
+article h1#tituloGrande {
+    max-width: 300px;
+}
+
+article p {
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.6em;
+    padding: 10px;
+}
+
+article p.espaçamentoSuperior {
+    margin-top: 25px;
+}
+
+article p#caixaPergunta {
+    color: white;
+    background-color: var(--corCaixa1);
+    padding: 5px 11px 5px 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: auto;
+}
+
+article p#caixaPergunta::before {
+    color: var(--corCaixa1);
+    background-color: white;
+    border-radius: 100%;
+} 
+
+article ol{
+    width: 450px;
+    list-style-position: inside;
+    padding: 10px 10px 0px 10px;
+    border-color: black;
+    border: 1.59px;
+    border-style: solid;
+    border-radius: 0px 10px;
+    margin: auto;
+}
+
+article li {
+    margin-bottom: 10px;
+}
+
+article span.letraPequena {
+    font-size: 0.8em;
+}
+
+article span.textoDestacado {
+    text-decoration: underline red;
+}
+
+article div#caixaVideo {
+    background-color: var(--corFundoHeader);
+    padding-bottom: 56.861%;
+    position: relative;
+}
+
+article iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+article div#caixaImagem {
+    background-color: var(--corFundoHeader);
+    padding: 10px 9px 6px 9px;
+    margin: auto;
+}
+
+article img {
+    width: 100%;
+}
+
+nav {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    font-size: 1.1em;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: var(--corCaixa1);
+    padding: 10px;
+    border: 3px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 8px;
+    margin: 3% 4%;
+}
+
+nav a#caixaOutraCor {
+    background-color: var(--corCaixa2);
+}
+
+footer {
+    font-size: 0.65em;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 3px 0px;
+}
+
+footer a {
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: rgba(255, 0, 0, 0.632);
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Começo do Jogo</title>
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../estilo/style.css">
+    <style>
+        article p#caixaPergunta {
+            width: 320px;
+        }
+
+        article p#caixaPergunta::before {
+            content: '\00A0 1\00A0\00A0';
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pergunta #1</h1>
+    </header>
+    <main>
+        <article>
+            <p>
+                Para começarmos bem e para você entender como que funciona o jogo quero que responda a primeira pergunta...
+            </p>
+            <p id="caixaPergunta">
+                Qual animal está apacendo na foto?
+            </p>
+            <div id="caixaImagem">
+                <abbr title="Diminua a tela do navegador">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="../imagens/porco-tomando-sorvete.webp">
+                        <img src="../imagens/varios-animais.jpg" alt="Muitos animais estão nessa imagem">
+                    </picture>
+                </abbr>
+            </div>
+        </article>
+
+        <!-- Eu, como programador iniciante, sei que utilizar a tag <nav> como usei em baixo não está correto. Porém, com o conhecimento que tenho de CSS3, foi assim que pensei em executar. Irei buscar melhorar minha lógica em programar com as folhas de estilo para não cometer esse tipo de erro novamente. -->
+        <nav>
+            <a id="caixaOutraCor" href="../respostas-erradas/r-e-pergunta1.html" target="_self" rel="next">Tucano rosa</a>
+            <a href="../respostas-erradas/r-e-pergunta1.html" target="_self" rel="next">Dinossauro dançando "La Cucaracha"</a>
+            <a id="caixaOutraCor" href="../respostas-erradas/r-e-pergunta1.html" target="_self" rel="next">Koala</a>
+        </nav>
+        <nav>
+            <a href="../respostas-erradas/r-e-pergunta1.html" target="_self" rel="next">Penguin surfando</a>
+            <a id="caixaOutraCor" href="../respostas-erradas/r-e-pergunta1.html" target="_self" rel="next">Formiga</a>
+            <a href="pergunta02.html" target="_self" rel="next">Porquinho tomando sorvete</a>
+        </nav>
+        <nav>
+            <a id="caixaOutraCor" href="../respostas-erradas/r-e-pergunta1.html" target="_self" rel="next">Abrelha</a>
+            <a href="../respostas-erradas/r-e-pergunta1.html" target="_self" rel="next">Cachorro em cima de uma pedra</a>
+            <a id="caixaOutraCor" href="../respostas-erradas/r-e-pergunta1.html" target="_self" rel="next">Tartaruga voadora</a>
+        </nav>
+
+        <footer>
+            <p>Jogo criado por <a href="https://github.com/GiuseppeMazze0/" target="_blank" rel="external">Giuseppe Mazzeo</a></p>
+        </footer>
+    </main>
+</body>
+</html>

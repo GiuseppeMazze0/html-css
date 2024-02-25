@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Começo do Jogo</title>
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../estilo/style.css">
+    <style>
+        article p#caixaPergunta {
+            width: 325px;
+        }
+
+        article p#caixaPergunta::before {
+            content: '\00A0 2\00A0';
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pergunta #2</h1>
+    </header>
+    
+    <main>
+        <article>
+            <p>
+                UAUU, conseguiu passar da primeira pergunta? Ma-as como?
+            </p>
+            <p>
+                Bom, tenho uma teoria, ou você deve ser muito inteligente e observador(a) ou só acertou a opção por pura sorte. Olhando bem para você... presumo que seja a minha segunda hipótese.
+            </p>
+            <p>
+                Enfim, vamos dar continuidade ao quiz.
+            </p>
+            <p>
+                Como disse anteriormente, haverá temas em certas perguntas, e para essa pergunta você que me responder usando a linda e pura matemática. É simples, só terá que usar a operação de adição.
+            </p>
+            <p id="caixaPergunta">
+                Quantos pinguins aparecem no vídeo?
+            </p>
+            <div id="caixaVideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/msSfNpt5HnA?si=11E2tM-iIedPu-ce" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </article>
+
+        <nav>
+            <a href="pergunta03.html" target="_self" rel="next">MUITOSS!</a>
+            <a href="pergunta03.html" target="_self" rel="next">O suficiente para caber no vídeo.</a>
+            <a href="pergunta03.html" target="_self" rel="next">Só sei contar até 10 e olhe lá...</a>
+        </nav>
+    </main>
+
+    <footer>
+        <p>Jogo criado por <a href="https://github.com/GiuseppeMazze0/" target="_blank" rel="external">Giuseppe Mazzeo</a></p>
+    </footer>
+</body>
+</html>
