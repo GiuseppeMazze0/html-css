@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Começo do Jogo</title>
+    <title>x x x O O O O O O O</title>
     <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../estilo/style.css">
     <style>
         article p#caixaPergunta {
-            width: 325px;
+            width: 340px;
         }
 
         article p#caixaPergunta::before {
-            content: '\00A0 2\00A0';
+            content: '\00A0 3\00A0';
         }
     </style>
 </head>
@@ -23,15 +23,30 @@
     
     <main>
         <article>
+            <p>
+                Parabéns, você é um gênio em matemática! Estou surpreso.
+            </p>
+            <p>
+                Agora iremos testar o seu conhecimento em história. Vou te perguntar um fato bem simples...
+            </p>
+            <p id="caixaPergunta">
+                Em que ano foi finalizada a Torre Eiffel?
+            </p>
+            <div id="caixaImagem">
+                <img src="../imagens/torre-eiffel.webp" alt="Imagem da Torre Eiffel">
+            </div>
         </article>
 
         <nav>
-
+            <a href="../respostas-erradas/r-e-pergunta3.html" target="_self" rel="next">26 de janeiro de 1887</a>
+            <a id="caixaOutraCor" href="pergunta04.html" target="_self" rel="next">31 de março de 1889</a>
+            <a href="../respostas-erradas/r-e-pergunta3.html" target="_self" rel="next">15 março de 1886</a>
+            <a id="caixaOutraCor" href="../respostas-erradas/r-e-pergunta3.html" target="_self" rel="next">1 de janeiro de 1890</a>
         </nav>
-    </main>
 
-    <footer>
-        <p>Jogo criado por <a href="https://github.com/GiuseppeMazze0/" target="_blank" rel="external">Giuseppe Mazzeo</a></p>
-    </footer>
+        <footer>
+            <p>Jogo criado por <a href="https://github.com/GiuseppeMazze0/" target="_blank" rel="external">Giuseppe Mazzeo</a></p>
+        </footer>
+    </main>
 </body>
 </html>
