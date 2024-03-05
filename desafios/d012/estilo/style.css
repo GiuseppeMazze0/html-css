@@ -10,6 +10,18 @@
     src: url('../fontes/PassionOne-Bold.ttf') format(truetype);
 }
 
+@font-face {
+    font-family: 'Sriracha';
+    src: url('../fontes/Sriracha-Regular.ttf') format(truetype);
+    font-weight: normal;
+}
+
+
+html, body {
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 body a {
     color: white;
     font-weight: bolder;
@@ -20,28 +32,29 @@ body a:hover {
     text-decoration: underline;
 }
 
-body p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 header {
     text-align: center;
     color: white;
     background-color: black;
-    padding: 65px;
+    padding: 50px 0px;
 }
 
+/* text-transform: uppercase -- colocar o texto tudo em letra maiúscula */
+
 header h1 {
-    font-family: "Passion One", sans-serif;
-    font-size: 4em;
+    font-family: "Passion One", cursive;
+    font-variant: small-caps;
+    font-size: 10vw;
 }
 
 main pre {
-    height: 270px;
-    width: 280px;
+    display: inline-block;
+    font-family: 'Sriracha', cursive;
     font-size: 1.5em;
     line-height: 2em;
-    padding: 10px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 10px;
     margin: 70px;
     margin-left: 20px;
 }
@@ -49,7 +62,7 @@ main pre {
 main div {
     background: black none no-repeat right fixed;
     background-size: cover;
-    box-shadow: inset 0px 0px 10px black;
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.529);
     padding: 120px;
     padding-left: 0px;
 }
