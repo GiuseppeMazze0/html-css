@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --corFundo: #695234;
+}
+
+body {
+    background: var(--corFundo) url('../imagens/fundo-madeira.jpg') no-repeat fixed;
+    background-size: cover;
+}
+
+main iframe {
+    
+    display: block;
+    margin: auto;
+}
+
+section img {
+    height: 60px;
+    display: inline-block;
+    border-radius: 50%;
+}
