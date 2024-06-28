@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            display: flex;
+            /*
+            justify-content:
+            - faz o alinhamento em relação ao eixo principal.
+            - flex-start - põe os itens colado no main-start e (se tiver) o espaço livre fica no main-end.
+            - flex-end - põe os itens colado no main-end e (se tiver) o espaço livre fica no main-start.
+            - center - põe os itens no meio do main-axis e deixa os espaços iguais tanto no main-start como no main-end.
+            - space-between - coloca o 1o item no main-start e o último item no main-end, todos os outros itens vão estar no meio com espaçamento igual.
+            - space-evenly - mesma coisa que o space-between, a diferença é que o 1o e o último elementos não ficam grudados nos extremos. Todos os espaçamentos são iguais.
+            - space-around - cria caixas mediante as quantidades de itens. Essas caixas ocupam todo o conteiner o conteúdo do container, porém, são separadas com espaçamentos iguais. Cada item fica centralizado suas devidas caixas.
+            */
+            justify-content: flex-start;
+            flex-flow: row nowrap;
+            background-color: lightcoral;
+        }
+
+        div.item {
+            text-align: center;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+</body>
+</html>
